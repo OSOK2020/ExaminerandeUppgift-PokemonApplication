@@ -18,15 +18,15 @@ function PokemonApplication() {
         getPokemonList();
     },[])
 
+    const getPokemonData = async() => {
+        const res = await fetch(pickedPokemon);
+        const pokemonData = await res.json();
+        setPokemonData(pokemonData);
+    }
+    
     useEffect(() => {
         console.log(pickedPokemon)
     },[pickedPokemon])
-
-    const getPokemonData = async() => {
-        let res = await fetch(pickedPokemon);
-        let pokemonData = await res.json();
-        setPokemonData(pokemonData);
-    }
 
     return (
         <>

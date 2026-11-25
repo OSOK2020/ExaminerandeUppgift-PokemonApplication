@@ -2,7 +2,7 @@ function Pokemon( {pokemon} ) {
     return (
         <>
             <h1>{pokemon.name}</h1>
-            <img src={pokemon.sprites.front_shiny} alt={pokemon.name} />
+            <img src={pokemon.sprites.other.home.front_default} alt={pokemon.name} />
             <p>Typ:{" "} 
                 
                 {pokemon.types.map((type) => type.type.name).join("-")}
