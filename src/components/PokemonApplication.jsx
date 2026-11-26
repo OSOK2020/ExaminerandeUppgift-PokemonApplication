@@ -42,7 +42,7 @@ function PokemonApplication() {
             </select>
             
             <button onClick={getPokemonData}>Hämta info om Pokemon</button>
-            {pokemonData && <Pokemon pokemon={pokemonData} />}
+            {pokemonData && <Pokemon pokemon={pokemonData} />}    
         </>
     )
 
